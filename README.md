@@ -12,11 +12,28 @@ Following are the datasets provided by the API:
 
 -   `population_india_census2011.csv`
 
+## Running locally using `docker`
+
+-   Build image
+
+    ```bash
+    make build
+    ```
+
+-   Run image as a container
+
+    ```bash
+    make run
+    ```
+
+-   Stop running container
+    ```bash
+    make stop
+    ```
+
 ### Data Source
 
 [https://www.kaggle.com/sudalairajkumar/covid19-in-india](https://www.kaggle.com/sudalairajkumar/covid19-in-india)
-
-<br>
 
 #### Note
 
