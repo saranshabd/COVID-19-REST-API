@@ -9,7 +9,6 @@ const router = Router();
 
 router.get("/age-group", async (_, res) => {
     const data = await utils.loadAgeGroupDetails();
-    console.log(data[0]);
     res.status(httpStatus.OK).json(data);
 });
 

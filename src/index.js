@@ -3,11 +3,15 @@
 const dotenv = require("dotenv");
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 // load environment variables
 dotenv.config();
 
 const app = express();
+
+// use `cors` middleware
+app.use(cors());
 
 // use `body-parser` middleware
 app.use(bodyParser.urlencoded({ extended: false }));
